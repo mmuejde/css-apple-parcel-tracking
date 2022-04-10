@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Tracking</title>
+    <style>
+        * {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 100px;
+}
+
+.product {
+  font-size: 12px;
+  color: #2f2f2f;
+}
+
+.header {
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+.state {
+  margin-top: 16px;
+}
+
+.bg-bar {
+  height: 8px;
+  width: 100%;
+  background-color: lightgrey;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.bar {
+  height: 8px;
+  width: 60%;
+  background-color: green;
+  border-radius: 8px;
+  margin-top: 20px;
+  animation: 1s animateBar;
+}
+
+@keyframes animateBar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+
+.state ol {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.current {
+  font-weight: 600;
+  color: black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p class="product">16" MacBook Pro</p>
+        <h1 class="header">Ankunft: 7 Dez - 14 Dez</h1>
+        <div class="bg-bar">
+            <div class="bar"></div>
+        </div>
+        <div class="state">
+            <ol>
+                <li>Bestellung </br>aufgeben</li>
+                <li>Vorgang läuft</li>
+                <li class="current">Versand wird </br>vorbereitet</li>
+                <li>Bestellung versandt</li>
+                <li>Geliefert</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
